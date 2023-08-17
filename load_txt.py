@@ -1,16 +1,10 @@
-json_path="/home/pagevalue/lilinjun/slimpajama/nfcresult/test/"
-# txt_path="/home/pagevalue/lilinjun/slimpajama/new_test/nfcresult/dup_18gram/"
-txt_path="/home/pagevalue/lilinjun/slimpajama/nfcresult/dup"
-
-
-
 import os
 from glob import glob
 import re
 import json
 
-# file_list = glob(f"{txt_path}/duplicate_pairs_filter_range13*.txt")
-file_list = glob(f"{txt_path}/duplicate_pairs*.txt")
+# file_list = glob(f"{txt_path}/*.txt")
+file_list = glob(f"{txt_path}/*.txt")
 results = []
 seen = set()
 count = 0
