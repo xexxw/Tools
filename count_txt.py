@@ -15,7 +15,7 @@
 #                            break
 #    return count, file_list
 
-# fold_list = glob.glob('/home/hdp-nlu/yangjiawei1/pretrain_data/allcorpus_pipline_clean/360wenku/*')
+# fold_list = glob.glob('*')
 # for fold in fold_list:
 #     a_count, a_files = count_files_by_tag(fold, 'a')
 #     b_count, b_files = count_files_by_tag(fold, 'b')
