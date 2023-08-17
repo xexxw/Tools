@@ -1,8 +1,8 @@
 import glob
 
 
-# txt_list = glob.glob("/home/pagevalue/lilinjun/slimpajama/new_test/nfcresult/dup_18gram/duplicate_pairs_filter*.txt")
-txt_list = glob.glob("/home/pagevalue/lilinjun/slimpajama/nfcresult/dup/duplicate_pairs*.txt")
+# txt_list = glob.glob("*.txt")
+txt_list = glob.glob("*.txt")
 
 for file in txt_list:
     # 读取txt文件并将内容添加到集合中
