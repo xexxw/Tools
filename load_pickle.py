@@ -1,15 +1,15 @@
 import pickle
-import argparse
+import sys
 
-parser = argparse.ArgumentParser()
-parser.add_argument("--input_file")
-parser.add_argument("--output_file")
-args = parser.parse_args()
-input_file = args.input_file
-output_file = args.output_file
+# Read the pickle data from standard input
+data = pickle.load(sys.stdin.buffer)
 
-with open(input_file, "rb") as file:
-    data = pickle.load(file)
+# Derive the output file name from the input file name
+input_file = sys.argv[1]
 
-with open(output_file, "w", encoding = 'utf-8') as file:
+# Assume the input file ends with ".pickle"
+output_file = input_file[:-7] + ".txt"  
+
+# Write the data to the output file
+with open(output_file, "w", encoding='utf-8') as file:
     file.write(str(data))
